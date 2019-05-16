@@ -1,0 +1,16 @@
+window.addEventListener('message', function(event) {
+		if (event.origin = "https://tracking.sezzle.com" && event.data.trackId) {
+			var trackID = event.data.trackId;
+			var el = document.createElement('script');
+			el.src = 'https://widget.sezzle.com/v1/javascript/price-widget?uuid=bea82572-6387-4b7f-81c9-4b92854316c6&track_id='+trackID;
+			document.getElementsByTagName('head')[0].appendChild(el);
+		}
+		})
+		var sz_iframe = document.createElement('iframe');
+		sz_iframe.width = 0;
+		sz_iframe.height = 0;
+		sz_iframe.style.display = 'none';
+		sz_iframe.style.visibility = 'hidden';
+		sz_iframe.name='szl';
+		sz_iframe.src = 'https://tracking.sezzle.com';
+		document.body.appendChild(sz_iframe);

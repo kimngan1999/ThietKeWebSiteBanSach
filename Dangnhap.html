@@ -1,0 +1,49 @@
+<script language="javascript">
+    function pasuser(form) {
+        if (form.id.value=="kimngan") {
+            if (form.pass.value=="kimngan") {
+                location="DNTC.html"
+            } else {
+                alert("Mật khẩu không hợp lệ")
+            }
+        } else {  alert("Tài khoản không hợp lệ")
+        }
+    }
+</script>
+    <div style="text-align: center">
+        <table bgcolor="white" cellpadding="12" border="1" align="center">
+            <tr>
+                <td colspan="2">
+                    <div style="text-align: center">
+                        <h1><i><b>Hãy Đăng Nhập</b></i></h1>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1><i><b>Tên đăng nhập:</b></i></h1>
+                </td>
+                <td>
+                    <form name="login"><input name="id" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1><i><b>Mật Khẩu:</b></i></h1>
+                </td>
+                <td><input name="pass" type="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="text-align: center;">
+                        <input type="button" value="Login" onClick="pasuser(this.form)">
+                    </div>
+                </td>
+                <td>
+                    <div style="text-align: center;">
+                        <br><input type="Reset">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>

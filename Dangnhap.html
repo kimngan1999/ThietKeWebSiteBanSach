@@ -1,49 +1,169 @@
-<script language="javascript">
-    function pasuser(form) {
-        if (form.id.value=="kimngan") {
-            if (form.pass.value=="kimngan") {
-                location="DNTC.html"
-            } else {
-                alert("Mật khẩu không hợp lệ")
-            }
-        } else {  alert("Tài khoản không hợp lệ")
-        }
-    }
-</script>
-    <div style="text-align: center">
-        <table bgcolor="white" cellpadding="12" border="1" align="center">
-            <tr>
-                <td colspan="2">
-                    <div style="text-align: center">
-                        <h1><i><b>Hãy Đăng Nhập</b></i></h1>
+
+
+
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nhà sách Thuỷ Tiên</title>
+    <!--copy form w3school-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--create form webStorm-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <img src="images/logosacach.png" width="6%" height="100%">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gthieu">Giới thiệu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="khuyenmai.html">Khuyến mãi </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> Cá nhân</a>
+                    </li>
+
+                    <form class="form-inline mt-2 mt-md-0 col-xm-12">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary btn-sm " type="submit">Tìm</button>
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dangnhap.html">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dangki.html">Đăng kí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#"> <span class="fa fa-shopping-cart btn-icon__inner"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- register -->
+        <div align="center">
+
+            <script language="javascript">
+                function pasuser(form) {
+                    if (form.id.value=="kimngan") {
+                        if (form.pass.value=="kimngan") {
+                            location="DNTC.html"
+                        } else {
+                            alert("Mật khẩu không hợp lệ")
+                        }
+                    } else {  alert("Tài khoản không hợp lệ")
+                    }
+                }
+            </script>
+                <div style="text-align: center">
+                    <table bgcolor="white" cellpadding="12" border="1" align="center">
+                        <tr>
+                            <td colspan="2">
+                                <div style="text-align: center">
+                                    <h1><i><b>Hãy Đăng Nhập</b></i></h1>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1><i><b>Tên đăng nhập:</b></i></h1>
+                            </td>
+                            <td>
+                                <form name="login"><input name="id" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h1><i><b>Mật Khẩu:</b></i></h1>
+                            </td>
+                            <td><input name="pass" type="password"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="text-align: center;">
+                                    <input type="button" value="Login" onClick="pasuser(this.form)">
+                                </div>
+                            </td>
+                            <td>
+                                <div style="text-align: center;">
+                                    <br><input type="Reset">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+        <div align="center">
+           <p style="color:rgb(116, 180, 73)"> Đăng nhập để cập nhật thông tin cá nhân </p>
+           <p style="color:rgb(116, 180, 73)"> Đăng nhập để bỏ điểm cho mỗi lần mua sắm</p>
+        </div>
+
+        <!-- end register -->
+
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                        <p>Website được xây dựng bởi Tô Thị Kim Ngân</p>
+                        <!-- Rights-->
+                        <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span><></span><span>. </span><span>All Rights Reserved.</span></p>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1><i><b>Tên đăng nhập:</b></i></h1>
-                </td>
-                <td>
-                    <form name="login"><input name="id" type="text">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1><i><b>Mật Khẩu:</b></i></h1>
-                </td>
-                <td><input name="pass" type="password"></td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="text-align: center;">
-                        <input type="button" value="Login" onClick="pasuser(this.form)">
-                    </div>
-                </td>
-                <td>
-                    <div style="text-align: center;">
-                        <br><input type="Reset">
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Liên Hệ</h5>
+                    <dl class="contact-list">
+                        <dt>Đại chỉ:</dt>
+                        <dd>06 Trần Văn Ơn</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>email:</dt>
+                        <dd><a href="mailto:#">pgo3@mail.ccsf.edu</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>điện thoại:</dt>
+                        <dd><a href="tel:#">+84 23456789</a> <span>or</span> <a href="tel:#">+84 23456789</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div id="dn">
+                    <img src="images/Fahasacom.png"
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters social-container">
+            <div class="col"><a class="social-inner" href="https://www.facebook.com/muapha.le.315"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div class="col"><a class="social-inner" href="https://github.com/kimngan1999/ThietKeWebSiteBanSach.git"><span class="icon mdi mdi-instagram"></span><span>Github</span></a></div>
+            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div class="col"><a class="social-inner" href="https://www.google.com.vn/"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

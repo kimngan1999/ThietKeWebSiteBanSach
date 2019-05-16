@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Sher.js"></script>
     <!--create form webStorm-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -22,60 +23,60 @@
 
 <body>
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <img src="images/logosacach.png" width="6%" height="100%">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img src="images/logosacach.png" width="6%" height="100%">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gthieu">Giới thiệu</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gthieu">Giới thiệu</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link " href="khuyenmai.html">Khuyến mãi </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#"> Cá nhân</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="khuyenmai.html">Khuyến mãi </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#"> Cá nhân</a>
+                </li>
 
-                    <form class="form-inline mt-2 mt-md-0 col-xm-12">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-primary btn-sm " type="submit">Tìm</button>
-                    </form>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Dangnhap.html">Đăng nhập</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Dangki.html">Đăng kí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#"> <span class="fa fa-shopping-cart btn-icon__inner"></span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <form class="form-inline mt-2 mt-md-0 col-xm-12">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary btn-sm " type="submit">Tìm</button>
+                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dangnhap.html">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Dangki.html">Đăng kí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#"> <span class="fa fa-shopping-cart btn-icon__inner"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- register -->
+    <!-- register -->
 
-        <div align="center">
+    <div align="center">
 
-            <p>ĐĂNG KÍ THÀNH VIÊN</p>
-            <fieldset>
-                <legend>Thông tin cá nhân</legend>
-                <table rows:2 cellspacing="6" class="ks">
-        
-                    <tr>
-                        <td><label> Họ và tên:</label> &emsp;</td>
-                        <td><input type="text" name="hoten" id="txthoten"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Ngày sinh </label></td>
-                        <td> <select name="Ngày">
+        <p>ĐĂNG KÍ THÀNH VIÊN</p>
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <table rows:2 cellspacing="6" class="ks">
+
+                <tr>
+                    <td><label> Họ và tên:</label> &emsp;</td>
+                    <td><input type="text" name="hoten" id="txthoten"></td>
+                </tr>
+                <tr>
+                    <td><label>Ngày sinh </label></td>
+                    <td> <select name="Ngày">
         <option value="01" selected>01</option>
         <option value="02">02</option>
         <option value="03">03</option>
@@ -108,7 +109,7 @@
         <option value="30">30</option>
         <option value="31">31</option>
         </select>
-                            <select name="Thang">
+                        <select name="Thang">
         <option value="01" selected>01</option>
         <option value="02">02</option>
         <option value="03">03</option>
@@ -122,61 +123,62 @@
         <option value="11">11</option>
         <option value="12">12</option>
         </select>
-                            <label> Năm:  <input type="text" size="2" name="Nam" id="txtNam"></label></td>
-                    </tr>
-                    <tr>
-                        <td> <label> Gioi tinh: </label></td>
-                        <td><input type="radio" name="T">Nam<input type="radio" name="T">Nữ</td>
-                    </tr>
-                    <tr>
-                        <td><label>Địa chỉ:</label></td>
-                        <td><input type="text" height="30" name="Diachi" id="txtDiachi"></td>
-                    </tr>
-                    <tr>
-                        <td> Điện thoại: </td>
-                        <td><input type="tel" name="Dienthoai" id="txtDienthoai"></td>
-                    </tr>
-                    <tr>
-                        <td> Email: </td>
-                        <td><input type="email" name="Email" id="txtEmail"></td>
-                    </tr>
-                </table>
-            </fieldset>
-        
-            <fieldset>
-                <legend>Thông tin đăng nhập</legend>
-                <table rows="2" cellspacing="3" class="ks">
-                    <tr>
-                        <td> Tên đăng nhập: </td>
-                        <td> <input type="text" required id="txtdangnhap"></td>
-                    </tr>
-                    <tr></tr>
-        
-                    <tr>
-                        <td> Mật khẩu: </td>
-                        <td> <input type="password" required id="txtmatkhau"></td>
-                    </tr>
-                    <tr>
-                        <td> Nhập lại mật khẩu: </td>
-                        <td> <input type="password" required id="txtnhaplai"></td>
-                    </tr>
-                </table>
-            </fieldset>
-            </br>
-            </br>
-            </br>
-            <div align="center"><input type="submit" value="Đăng kí" onClick="return Kiemtrathongtin()"><input type="reset" value="Hủy">
-            </div>
-        </div>
+                        <label> Năm:  <input type="text" size="2" name="Nam" id="txtNam"></label></td>
+                </tr>
+                <tr>
+                    <td> <label> Gioi tinh: </label></td>
+                    <td><input type="radio" name="T">Nam<input type="radio" name="T">Nữ</td>
+                </tr>
+                <tr>
+                    <td><label>Địa chỉ:</label></td>
+                    <td><input type="text" height="30" name="Diachi" id="txtDiachi"></td>
+                </tr>
+                <tr>
+                    <td> Điện thoại: </td>
+                    <td><input type="tel" name="Dienthoai" id="txtDienthoai"></td>
+                </tr>
+                <tr>
+                    <td> Email: </td>
+                    <td><input type="email" name="Email" id="txtEmail"></td>
+                </tr>
+            </table>
+        </fieldset>
 
-        <!-- end register -->
+        <fieldset>
+            <legend>Thông tin đăng nhập</legend>
+            <table rows="2" cellspacing="3" class="ks">
+                <tr>
+                    <td> Tên đăng nhập: </td>
+                    <td> <input type="text" required id="txtdangnhap"></td>
+                </tr>
+                <tr></tr>
+
+                <tr>
+                    <td> Mật khẩu: </td>
+                    <td> <input type="password" required id="txtmatkhau"></td>
+                </tr>
+                <tr>
+                    <td> Nhập lại mật khẩu: </td>
+                    <td> <input type="password" required id="txtnhaplai"></td>
+                </tr>
+            </table>
+        </fieldset>
+        </br>
+        </br>
+        </br>
+        <div align="center"><input type="submit" value="Đăng kí" onClick="return Kiemtrathongtin()"><input type="reset" value="Hủy">
+        </div>
+    </div>
+
+    <!-- end register -->
 
 
     <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
         <div class="container">
             <div class="row row-30">
                 <div class="col-md-4 col-xl-5">
-                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <div class="pr-xl-4">
+                        <a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
                         <p>Website được xây dựng bởi Tô Thị Kim Ngân</p>
                         <!-- Rights-->
                         <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span><></span><span>. </span><span>All Rights Reserved.</span></p>
@@ -199,16 +201,15 @@
                     </dl>
                 </div>
                 <div id="dn">
-                    <img src="images/Fahasacom.png"
+                    <img src="images/Fahasacom.png" </div>
                 </div>
             </div>
-        </div>
-        <div class="row no-gutters social-container">
-            <div class="col"><a class="social-inner" href="https://www.facebook.com/muapha.le.315"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-            <div class="col"><a class="social-inner" href="https://github.com/kimngan1999/ThietKeWebSiteBanSach.git"><span class="icon mdi mdi-instagram"></span><span>Github</span></a></div>
-            <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-            <div class="col"><a class="social-inner" href="https://www.google.com.vn/"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
-        </div>
+            <div class="row no-gutters social-container">
+                <div class="col"><a class="social-inner" href="https://www.facebook.com/muapha.le.315"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+                <div class="col"><a class="social-inner" href="https://github.com/kimngan1999/ThietKeWebSiteBanSach.git"><span class="icon mdi mdi-instagram"></span><span>Github</span></a></div>
+                <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+                <div class="col"><a class="social-inner" href="https://www.google.com.vn/"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+            </div>
     </footer>
 
 </body>
